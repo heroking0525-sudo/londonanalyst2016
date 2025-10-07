@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LONDON ANALYST [2016] - Cricket Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="content">
+      <h3>CRICKET PREDICTION KA BETAAJ BADSHAH</h3>
+      <h1>👑 LONDON ANALYST [2016] 👑</h1>
+
+      <h2><span id="timer">60</span> Seconds Left Only</h2>
+      <p>✅ Back To Back 12/13 Pass</p>
+      <p>✅ IPL 2022 - 58/63 PASS</p>
+
+    <button id="subscribeBtn" onclick="window.location.href='https://t.me/+YGaIM1a8aPE0YzRl'">SUBSCRIBE NOW FOR FREE 💚</button>
+
+      <p class="disclaimer">
+        Disclaimer: We are not promoting gambling from any source.  
+        This is only for entertainment and informational purposes.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Countdown timer
+    let seconds = 60;
+    const timerEl = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        timerEl.textContent = "0";
+      }
+    }, 1000);
+
+    // Fade in-out animation on button
+    const btn = document.getElementById("subscribeBtn");
+    let fade = true;
+
+    setInterval(() => {
+      btn.style.opacity = fade ? "0.3" : "1";
+      fade = !fade;
+    }, 800);
+  </script>
+</body>
+</html>
